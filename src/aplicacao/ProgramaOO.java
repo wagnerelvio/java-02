@@ -11,31 +11,30 @@ public class ProgramaOO {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		Trapezio trapezio_um, trapezio_dois;
-		
-		trapezio_um   = new Trapezio();
-		trapezio_dois =  new Trapezio();
-		
+		Trapezio t1, t2;
+
+		t1 = new Trapezio();
+		t2 = new Trapezio();
 
 		System.out.printf("Digite os valores de Bt1, bt1 e ht1, respectivamente:  ");
-		Bt1 = sc.nextDouble();
-		bt1 = sc.nextDouble();
-		ht1 = sc.nextDouble();
+		t1.B = sc.nextDouble();
+		t1.b = sc.nextDouble();
+		t1.h = sc.nextDouble();
 
 		System.out.printf("Digite os valores de Bt2, bt2 e ht2, respectivamente :  ");
-		Bt2 = sc.nextDouble();
-		bt2 = sc.nextDouble();
-		ht2 = sc.nextDouble();
+		t2.B = sc.nextDouble();
+		t2.B = sc.nextDouble();
+		t2.h = sc.nextDouble();
 
-		double areat1 = (Bt1 + bt1) * ht1 / 2;
-		double areat2 = (Bt2 + bt2) * ht2 / 2;
+		double areat1 = (t1.b + t1.b) * t1.h / 2;
+		double areat2 = (t2.B + t2.b) * t2.h / 2;
 		System.out.printf("Area do trapezio 01: %.2f%n", areat1);
 		System.out.printf("Area do trapezio 02: %.2f%n", areat2);
 
 		if (areat1 > areat2) {
-			System.out.println("O Trapezio 01 possui a maior area");
+			System.out.println("O Trapezio 01 possui a maior area.");
 		} else {
-			System.out.println("O Trapezio 02 possui a maior area");
+			System.out.println("O Trapezio 02 possui a maior area.");
 		}
 
 		sc.close();
